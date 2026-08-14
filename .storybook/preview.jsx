@@ -18,7 +18,7 @@ const preview = {
   },
   decorators: [
     withThemeByClassName({
-      themes: { light: '', dark: 'dark' },
+      themes: { light: 'light', dark: 'dark' },
       defaultTheme: 'dark',
     }),
   ],
