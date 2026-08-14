@@ -1,0 +1,65 @@
+# prompts.md
+
+A record of prompts used with AI assistance while building the Next.js migration for Sprint 9 (Cine-Stream). Kept here to show directed, incremental use of AI tooling throughout the build.
+
+---
+
+**1.**
+"I need to migrate my Sprint 8 CineGrid app from Vite + React to Next.js 15 with the App Router. Can you walk me through setting up the project from scratch?"
+
+**2.**
+"Give me a step by step guide starting from Phase 1, P0 — from environment setup onwards."
+
+**3.**
+"Can we create the project folder manually first, then open it in VS Code and use the integrated terminal to scaffold it? I don't want create-next-app naming the folder for me."
+
+**4.**
+"What does the import alias option during setup actually do? Should I customize it or leave the default?"
+
+**5.**
+"Do I need to include an AGENTS.md file for this project?"
+
+**6.**
+"I'm getting a warning about multiple lockfiles and an incorrect workspace root when I run the dev server. How do I fix that?"
+
+**7.**
+"My next.config.mjs is throwing a ReferenceError — __dirname is not defined in ES module scope. How do I fix this without breaking the turbopack root config?"
+
+**8.**
+"The dev server boots but I'm getting a runtime TypeError: components.ComponentMod.handler is not a function. What's causing this?"
+
+**9.**
+"I checked app/page.js and app/layout.js and they look correct — no typos, proper exports. What else could be causing this build error?"
+
+**10.**
+"Here's my Sprint 8 folder structure — src/components, hooks, services. Walk me through how to port each file into the new Next.js structure without breaking anything."
+
+**11.**
+"Here's my MovieCard.jsx from Sprint 8 — does this need any changes for Next.js, or can it be ported as-is?"
+
+**12.**
+"Here's my services/tmdb.js file — it's using import.meta.env for the API key and base URL. How do I convert this to work with Next.js environment variables, and do I need to worry about the API key being exposed to the client?"
+
+**13.**
+"Here's my SearchBar.jsx — it takes an onSearch callback prop from the parent. How should this work differently in Next.js given the Server/Client component split?"
+
+**14.**
+"Here's my MovieGrid.jsx with an IntersectionObserver for infinite scroll — does this need to be a client component, and does the rest of the logic need to change?"
+
+**15.**
+"Here's my old App.jsx along with my useMovies and useFavorites hooks — this is where all my state currently lives. How should this be restructured across Server Components and Client Components in the new architecture?"
+
+**16.**
+"I'm getting an ESLint error in MovieGrid saying I can't access refs during render. How do I fix this without changing the intersection observer behavior?"
+
+**17.**
+"I'm getting a module not found error for async_hooks after moving my components, hooks, and lib folders around. My jsconfig.json path aliases don't seem to be resolving correctly — can you help me debug the folder structure?"
+
+**18.**
+"My package.json seems to have gotten corrupted after some manual edits — can you give me the correct full file so I can just replace it entirely?"
+
+**19.**
+"I accidentally committed node_modules and .next to my Git repo before setting up .gitignore, and now GitHub is blocking my push because of a file over 100MB. What's the safest way to fix this without losing my actual source code?"
+
+**20.**
+"The site is live on Vercel now but it's completely unstyled — no grid layout, no card spacing, nothing. Can you help me figure out why the CSS isn't applying?"

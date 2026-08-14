@@ -1,0 +1,58 @@
+:root {
+  --bg-deep: #0a0a0f;
+  --bg-panel: rgba(255, 255, 255, 0.04);
+  --border-glass: rgba(255, 255, 255, 0.08);
+  --accent: #e50914;
+  --accent-glow: rgba(229, 9, 20, 0.35);
+  --text-primary: #f4f4f6;
+  --text-muted: #9a9aa5;
+  --rating-gold: #f5c518;
+
+  --font-display: "Rajdhani", sans-serif;
+  --font-body: "Space Grotesk", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg-deep);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  /* subtle radial glow so it's not just flat black */
+  background-image: radial-gradient(circle at 20% -10%, rgba(229, 9, 20, 0.12), transparent 40%),
+    radial-gradient(circle at 80% 0%, rgba(80, 80, 255, 0.08), transparent 35%);
+  background-attachment: fixed;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+}
+
+.glass-panel {
+  background: var(--bg-panel);
+  border: 1px solid var(--border-glass);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+.app-shell {
+  min-height: 100vh;
+}
+
+.search-section {
+  padding: 32px 40px 8px;
+}
+
+@media (max-width: 640px) {
+  .search-section {
+    padding: 20px 16px 4px;
+  }
+}

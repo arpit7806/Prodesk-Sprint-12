@@ -1,0 +1,21 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 16px 40px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+.logo {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 0.03em;
+  color: var(--text-primary);
+}
+
+.logo-accent {
+  color: var(--accent);
+}
