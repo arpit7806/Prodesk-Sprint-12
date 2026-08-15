@@ -25,7 +25,7 @@ export const Default = {
     movie: {
       id: 1,
       title: 'Everything Everywhere All at Once',
-      poster_path: '/kyeqWdyUXW608qlYkRqosgbbJyK.jpg', 
+      poster_path: 'media.themoviedb.org/t/p/w220_and_h330_face/tG6LbtboperBHLUKwY0RgUp6AZ3.jpg',
       vote_average: 7.8,
       release_date: '2022-03-24',
     },
